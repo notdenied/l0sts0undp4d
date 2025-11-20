@@ -75,7 +75,7 @@ LOGIN_HTML = """
 <!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Login</title><style>{{ css }}</style></head><body>
 <div class="container">
-  <div class="header"><div class="brand">Soundpad — Вход</div></div>
+  <div class="header"><div class="brand">l0sts0undp4d — Вход</div></div>
   <form method="post" style="display:flex;flex-direction:column;gap:10px;max-width:360px">
     <input name="username" placeholder="Username" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit">
     <input name="password" placeholder="Password" type="password" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit">
@@ -88,7 +88,7 @@ REGISTER_HTML = """
 <!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Register</title><style>{{ css }}</style></head><body>
 <div class="container">
-  <div class="header"><div class="brand">Soundpad — Регистрация</div></div>
+  <div class="header"><div class="brand">l0sts0undp4d — Регистрация</div></div>
   <form method="post" style="display:flex;flex-direction:column;gap:10px;max-width:360px">
     <input name="username" placeholder="Username" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit">
     <input name="password" placeholder="Password" type="password" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit">
@@ -99,12 +99,12 @@ REGISTER_HTML = """
 
 MAIN_HTML = """
 <!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Soundpad</title><style>{{ css }}</style>
+<title>l0sts0undp4d</title><style>{{ css }}</style>
 <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
 </head><body>
 <div class="container">
   <div class="header">
-    <div class="brand">Soundpad — {{ username }}</div>
+    <div class="brand">l0sts0undp4d — {{ username }}</div>
     <form method="post" action="/logout" style="margin:0"><button class="btn" type="submit">Выйти</button></form>
   </div>
 
