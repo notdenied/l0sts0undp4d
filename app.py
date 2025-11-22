@@ -1,6 +1,8 @@
 import os
 import sqlite3
 
+from datetime import timedelta
+
 from flask import (
     Flask, render_template_string, request, redirect,
     session, send_from_directory
@@ -292,6 +294,9 @@ def reorder():
 def serve_file(fname):
     return send_from_directory(UPLOAD_DIR, fname)
 
+
+app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(days=30)
+app.config['SESSION_PERMANENT'] = True
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=7331)
