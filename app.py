@@ -198,6 +198,7 @@ def login():
             return "Invalid", 403
         session["user_id"] = r["id"]
         session["username"] = username
+        session.permanent = True
         return redirect("/")
     return render_template_string(LOGIN_HTML, css=CSS)
 
@@ -296,7 +297,7 @@ def serve_file(fname):
 
 
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(days=30)
-app.config['SESSION_PERMANENT'] = True
+app.config['SESSION_REFRESH_EACH_REQUEST'] = True
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=7331)
